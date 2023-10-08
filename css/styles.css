@@ -1,0 +1,330 @@
+:root{
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --white: #FFFFFF;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    background-color: var(--white);
+    color: var(--slate);
+}
+
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+ }
+
+ .img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    text-decoration:none;
+}
+
+address {
+    font-style: inherit;
+    margin-left: auto;
+
+}
+/* A Class given to Div Tags*/
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* A Class given to Section Tags */
+.section {
+    padding: 120px 0;
+}
+.no-top-padding {
+    padding:  0;
+}
+
+.menu,
+.nav-container,
+.nav-list-container,
+.cta-container{
+    display: flex;
+    align-items: center;
+}
+
+
+/* LOGO and Footer Logo */
+.logo{
+    color: var(--iris);
+    font-family:'Raleway', sans-serif;
+    font-weight: 800;
+    font-size:18px;
+    line-height: 1.1667;
+    text-decoration: none;
+    
+}
+
+.logo-black{
+    color: var(--navy-blue);
+ }
+
+/*Logo Footer*/
+.logo-white{
+    color: var(--white);
+}
+
+
+/*ALL NAVIGATION AND OPTION LIST in index and portfolio */
+
+/*Magin to Separate  Studio, Portfolio, Contacts */
+.nav-list-container .item:not(:last-child),
+.cta-container .item:not(:last-child){
+    margin-right: 40px;    
+}
+
+/*Margin to Separate Logo from Studio, Portfolio...*/
+.nav-list-container{
+    margin-left: 76px;
+  }
+
+.nav-list-container .page {
+    color:var(--navy-blue);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+} 
+
+.cta-container .contact{
+    color: var(--slate);
+}
+
+/*Needs to put display block for padding to take effect*/
+.nav-list-container .page,
+.cta-container .contact{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 23px;
+}
+
+.nav-list-container .page:hover,
+.nav-list-container .page:focus,
+.nav-list-container .page.current,
+.cta-container .contact:hover,
+.cta-container .contact:focus{
+    color: var(--ocean);
+}
+
+
+/* ALL BUTTONS  IN THIS SECTION*/
+.buttons {
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.buttons {
+    background-color: var(--iris);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.87;
+    letter-spacing: 0.06em;
+}
+
+.order-services:hover,
+.order-services:focus {
+    background-color: var(--ocean);
+}
+
+.order-services {
+    background-color: var(--iris);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.87;
+    letter-spacing: 0.06em;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+/* HERO SECTION */
+.hero {
+    background-color:var(--navy-blue);
+    font-family: 'Roboto',sans-serif ;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    padding: 188px 0;
+    text-align: center;
+  
+}
+
+.main-heading {
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07143; /*107.143% */
+    letter-spacing: 1.12px;
+    margin-bottom: 48px ;
+}
+
+/*FEATURE SECTION */
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: 156px;
+    margin-right: 156px;
+    
+}
+
+.feature-container .item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+/* WHAT WE DO SECTION*/
+.section-head {
+    margin-bottom: 72px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11111; /* 111.111% */
+    letter-spacing: 0.72px;
+}
+
+.whatwedo {
+    text-decoration: none;
+}
+
+.whatwedo-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+.whatwedo-container .item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+/*OUR TEAM SECTION*/
+.team-bg {
+    background-color: var(--cloud)
+}
+
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;  
+}
+
+.our-team .item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.person-name,
+.designation {
+   text-align: center;
+}
+
+.person-name {
+    padding-top: 32px;
+}
+
+.designation {
+    padding-top: 8px;
+}
+
+/*FOR PORTFOLIO BUTTONS*/
+.buttons.filter{
+    background-color: var(--cornflower);
+    color: var(--slate);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 12px 24px;
+}
+
+.buttons.filter:hover,
+.buttons.filter:focus,
+.buttons.filter.current {
+     background-color: var(--ocean);
+     color: var(--white);
+}
+
+.buttons-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 96px;
+
+}
+
+.pics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-left: 156px;
+    margin-right: 156px;
+    padding-top: 72px;
+    padding-bottom: 120px;
+
+}
+
+.pics-container .item {
+    flex-basis: calc((100% - 192px) / 3);
+}
+
+.options {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.4px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+/* FOOTERS */
+.footer-container{
+    background-color: var(--navy-blue);
+    
+}
+
+.holder {
+    padding-top: 101.5px;
+}
+.footer-description {
+    color: white;
+    width: 264px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    padding-top: 17.5px;
+    padding-bottom: 100px;
+    
+}
