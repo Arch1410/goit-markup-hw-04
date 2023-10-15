@@ -411,17 +411,18 @@ address {
 }
 
 /*DIV LOGO*/
-/* .holder {
-    display: flex;
+.holder {
+    display: inline-flex;
     padding-top: 101.5px;
     height: 312px;
     flex-shrink: 0;
     margin-left: 156px;
-} */
+    align-items: left;
+}
 
 /*PARAGRAPH TAG*/
 .footer-description {
-    display: flex;
+    display: inline-flex;
     color: white;
     width: 264px;
     font-family: Roboto;
@@ -430,7 +431,6 @@ address {
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
     padding-top: 50.5px;
-    margin-left: -118px;
     padding-bottom: 100px;
 
 }
@@ -440,15 +440,20 @@ address {
     padding-bottom: 8px;
     padding-top: 101.5px;
     margin-left: 156px;
-    
 }
 
 .div-footerb  {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
 }
+
+.foot,
+.footer-social,
+.social
+.footer-description {
+    display: inline-flex;
+    flex-direction: column;
+}
+
 .social .item{
     display: inline-flex;
     justify-content: center;
@@ -457,19 +462,18 @@ address {
     height: 40px;
     background-color: var(--iris);
     border-radius: 40px;
-    margin-top: 120px;
-    
-    
 }
 
 .social .icon {
     fill: var(--white);
 }
 
-.social .footer-social {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: first baseline;
+.logo {
+    margin-right: auto;
+}
+
+.footer-description {
+    padding-top: 17.5px;
 }
 
 .social .item:hover,
@@ -477,12 +481,14 @@ address {
     background-color: var(--Green);
 }
 
-.footer-social {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    margin-left: 160px;
-   
-
+.social {
+    padding-top: 16px;
+    margin-left: 120px;
 }
+
+.footer-social {
+    display:inline-flex;
+    color: var(--white);
+    margin-left: 120px;
+}
+
